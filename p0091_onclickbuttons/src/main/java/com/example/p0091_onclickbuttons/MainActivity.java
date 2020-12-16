@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
         tvOut = (TextView) findViewById(R.id.tvOut);
         btnOk = (Button) findViewById(R.id.btnOk);
         btnCancel = (Button) findViewById(R.id.btnCancel);
-    // создаем обработчик нажатия
+
+        // создаем обработчик нажатия
 
         View.OnClickListener oclBtnOk = new View.OnClickListener() {
-
 
             @Override
             public void onClick(View v) {

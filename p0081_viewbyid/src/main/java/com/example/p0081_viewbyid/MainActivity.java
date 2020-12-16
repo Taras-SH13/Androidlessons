@@ -15,11 +15,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView myTextView = (TextView) findViewById(R.id.myText);
-        myTextView.setText("New text in TextView");
+        myTextView.setText("This is list of adapters");
 
         Button myButton = (Button) findViewById(R.id.button);
-        myButton.setText("My button");
-        myButton.setEnabled(false);
+        myButton.setText("Send");
+        myButton.setEnabled(true);
         CheckBox checkBox=(CheckBox)findViewById(R.id.checkBox);
         checkBox.setChecked(true);
     }

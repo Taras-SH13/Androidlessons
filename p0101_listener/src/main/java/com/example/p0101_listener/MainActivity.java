@@ -24,22 +24,19 @@ public class MainActivity extends AppCompatActivity {
         btnCancel = (Button) findViewById(R.id.btnCancel);
 
         // создание обработчика
-        View.OnClickListener oclBtn = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // по Id определяем кнопку, вызвавшую этот обработчик
-                switch (v.getId()) {
-                    case R.id.btnOk:
-                        // кнопка Ок
-                        tvOut.setText("Нажата кнопка ОК");
-                        break;
-                    case R.id.btnCancel:
-                        // кнопка Cancel
-                        tvOut.setText("Нажата кнопка Cancel");
-                        break;
-                }
-
+        View.OnClickListener oclBtn = v -> {
+            // по Id определяем кнопку, вызвавшую этот обработчик
+            switch (v.getId()) {
+                case R.id.btnOk:
+                    // кнопка Ок
+                    tvOut.setText("Нажата кнопка ОК");
+                    break;
+                case R.id.btnCancel:
+                    // кнопка Cancel
+                    tvOut.setText("Нажата кнопка Cancel");
+                    break;
             }
+
         };
         btnCancel.setOnClickListener(oclBtn);
         btnOk.setOnClickListener(oclBtn);
