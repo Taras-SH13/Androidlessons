@@ -1,3 +1,5 @@
+include ':p0131_menusimple'
+include ':p0121_logandmess'
 include ':p0111_resvalues'
 include ':p0102activitylistener2'
 include ':p0102_activitylistener'
